@@ -6,6 +6,8 @@
   --main-transition: 0.5s;
   --section-padding: 5rem ;
   --title-font-size :3rem;
+  --main-page:#090d14;
+
 }
 /* 🌍 Global Rules */
 * {
@@ -54,9 +56,8 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: var(--main-page);
     z-index: 10;
-    transition: var(--main-transition);
 }
 .heading .nav {
     display: flex;
@@ -101,7 +102,6 @@ ul {
     color: var(--main-color);   
 }
 .heading .nav .links ul  li a:hover {
-    font-size: 1.3rem;
     color: var(--main-color);
     font-weight: 600;
 }
@@ -156,7 +156,7 @@ ul {
     height: calc(450px + 100px);
     margin-top: 100px;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--main-page);
 }
 .landing .content {
     position: relative;
@@ -179,7 +179,7 @@ ul {
     background-color: transparent;
     font-weight: 800;
     margin: 10px;
-    color: white;
+    color: var(--font-color);
     font-size: 4rem ;
 }
 .landing .content .text p:first-child {
@@ -190,7 +190,7 @@ ul {
 /* Start Section two  */
 .section-one {
     padding: var(--section-padding) 0;
-    background-color: white;
+    background-color: var(--main-page);
     overflow: hidden;
 }
 .section-one .title {
@@ -201,6 +201,7 @@ ul {
 }
 .section-one .title p:first-child {
     font-size: var(--title-font-size);
+    color: var(--font-color);
 }
 .section-one .title span {
     font-size: 3rem;
@@ -208,12 +209,13 @@ ul {
     background-color: transparent;
 }
 .section-one .title p:last-child {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-wrap: wrap;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 50px;
     line-height: 1.5;
+    color: var(--font-color);
 }
 
 .section-one .vid {
@@ -256,7 +258,7 @@ ul {
 /* End our services */
 .services {
     padding: var(--section-padding) 0;
-    background-color: black;
+    background-color: var(--main-page);
 }
 .services .title {
     text-align: center;
@@ -264,7 +266,7 @@ ul {
 .services .title h2 {
     font-size: var(--title-font-size);
     color: var(--main-color);
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 @media(max-width:450px){
     .services .title h2 {
@@ -353,7 +355,7 @@ ul {
 /* Start program */
 .program {
     padding: var(--section-padding) 0;
-    background-color: white;
+    background-color: var(--main-page);
     text-align: center;
 }
 .program .title{
@@ -362,6 +364,7 @@ ul {
 .program .title h2{
     font-size: var(--title-font-size);
     margin-bottom: 20px;
+    color: var(--font-color);
 }
 .program .title span{
     color: var(--main-color);
@@ -377,15 +380,14 @@ ul {
      gap: 20px;
 }
 .program .card-group .card {
-    border: 1px solid var(--font-color);
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 20px;
     transition: var(--main-transition);
     cursor: pointer;
     text-align: end;
-    background-color: #000;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .program .card-group .card h3 {
     font-size: 1.2rem;
@@ -401,14 +403,14 @@ ul {
     color: white;
 }
 .program .button {
-    background-color: var(--main-color);
+    background-color: white;
     width: fit-content;
     margin: 0 auto;
     margin-top: 20px;
     padding: 20px ;
     padding-left: 50px;
     border-radius: 10px;
-    color: white;
+    color: black;
     cursor: pointer;
     position: relative;
     text-align: end;
@@ -423,7 +425,8 @@ ul {
     transition: var(--main-transition);
 }
 .program .button:hover {
-    background-color: black;
+    background-color: var(--main-color);
+    color: white;
 }
 .program .button:hover i {
     left: 10px;
@@ -431,10 +434,9 @@ ul {
 /* end program */
 /* start step-section */
 .steps-section {
-    background-color: white;
+    background-color: var(--main-page);
     padding: var(--section-padding) 0;
     text-align: center;
-    background-color: #000;
 }
 .steps-section .title {
     font-size: 25px;
@@ -552,14 +554,14 @@ right:-10px;
 }
 }
 .steps-section .button {
-    background-color: var(--main-color);
+    background-color: white;
     width: fit-content;
     margin: 0 auto;
     margin-top: 20px;
     padding: 20px ;
     padding-left: 50px;
     border-radius: 10px;
-    color: white;
+    color: black;
     cursor: pointer;
     position: relative;
     text-align: end;
@@ -574,8 +576,8 @@ right:-10px;
     transition: var(--main-transition);
 }
 .steps-section .button:hover {
-    background-color: white;
-    color: #000;
+    background-color: var(--main-color);
+    color: white;
 }
 .steps-section .button:hover i {
     left: 10px;
@@ -584,12 +586,13 @@ right:-10px;
 /* Start about us section */
 .about {
     padding: var(--section-padding) 0;
-    background-color: white;
+    background-color: var(--main-page);
     text-align: center;
 }
 .about .title {
     font-size: 25px;
     margin-bottom: 100px;
+    color: var(--font-color);
 }
 .about .title span {
     color: var(--main-color);
@@ -639,7 +642,7 @@ right:-10px;
 /* Start Story section  */
 .story {
     padding: var(--section-padding) 0 ;
-    background-color: black;
+    background-color: var(--main-page);
     text-align: center;
 }
 .story .title h2 {
@@ -734,7 +737,6 @@ right:-10px;
     padding: 20px ;
     padding-left: 50px;
     border-radius: 10px;
-    color: white;
     cursor: pointer;
     position: relative;
     text-align: end;
@@ -760,12 +762,13 @@ right:-10px;
 /* Start pricing */
 .pricing {
     padding: var(--section-padding) 0 ;
-    background-color: white;
+    background-color: var(--main-page);
     text-align: center;
 }
 .pricing .title h2 {
     font-size: var(--title-font-size);
     margin-bottom: 25px;
+    color: var(--font-color);
 }
 .pricing .title span {
     color: var(--main-color);
@@ -775,6 +778,7 @@ right:-10px;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 50%;
+    color: var(--font-color);
 }
 .pricing .card-group {
      display: grid;
@@ -786,7 +790,9 @@ right:-10px;
     border-radius: 22px;
     padding-bottom: 30px;
     transition: var(--main-transition);
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    cursor: pointer;
+    color: var(--font-color);
 }
 .pricing .card .text  p:last-child {
     font-size:1rem ;
@@ -806,14 +812,8 @@ right:-10px;
 .pricing .card .text p:first-child {
     font-size: 1.5rem;
     font-weight: 600;
-    color: black;
+    color: var(--font-color);
     text-align: center;
-}
-.pricing .card:hover .text p:first-child {
-    color: white;
-}
-.pricing .card:hover .text p:last-child {
-    color: white;
 }
 .pricing .card .text .price {
     display: flex;
@@ -823,14 +823,8 @@ right:-10px;
 }
 .pricing .card .text .price p {
     font-size:1.5rem ;
-    color: black;
+    color: var(--font-color);
     font-weight: bold;
-}
-.pricing  .text p:last-child {
-    color: #000;
-}
-.pricing .card:hover .text  .price p {
-    color: white;
 }
 .pricing .card .text .price span {
     font-size:1rem ;
@@ -889,7 +883,7 @@ right:-10px;
 /* start cust-opp */
 .cust-opp {
     padding: var(--section-padding) 0;
-    background-color: black;
+    background-color: var(--main-page);
     text-align: center;
 }
 .cust-opp .title h2 {
@@ -986,7 +980,7 @@ right:-10px;
 /*  Start partner  */
 .partner {
     padding: var(--section-padding) 0 ;
-    background-color: white;
+    background-color: var(--main-page);
     text-align: center;
 }
 .partner .title h2 {
@@ -1023,7 +1017,7 @@ right:-10px;
 /* Start Common -Q  */
 .common-q {
     padding: var(--section-padding) 0 ;
-    background-color: black;
+    background-color: var(--main-page);
     text-align: center;
 }
 .common-q .col-group {
@@ -1089,11 +1083,12 @@ right:-10px;
 /* Start jops  */
 .jops {
     padding: var(--section-padding) 0 ;
-    background-color: white;
+    background-color: var(--main-page);
     text-align: center;
 }
 .jops .title {
     margin-bottom: 80px;
+    color: var(--font-color);
 }
 .jops .title h2 {
     font-size: var(--title-font-size);
@@ -1115,13 +1110,13 @@ right:-10px;
 }
 .jops .card-group .card {
     flex-basis: 24%;
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.466);
     border-radius: 20px;
     padding: 20px;
     padding-bottom: 50px;
     text-align: end;
     transition: var(--main-transition);
-    background-color: var(--main-color);
+    background-color: white;
     color: black;
     cursor: pointer;
 }
@@ -1135,7 +1130,7 @@ right:-10px;
     }
 }
 .jops .card-group .card:hover {
-    background-color: #000;
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -1143,7 +1138,6 @@ right:-10px;
     font-size: 1.1rem;
     margin-bottom: 20px;
     text-align: center;
-    color: white;
 }
 .jops .card-group .card .text {
     display: flex;
@@ -1152,20 +1146,16 @@ right:-10px;
     align-items: end;
     gap: 5px;
     line-height: 1.5;
-    color: white;
-}
-.jops .card-group .card:hover .text {
-    color: white;
 }
 .jops .button {
-    background-color: var(--main-color);
+    background-color: white;
     width: fit-content;
     margin: 0 auto;
     margin-top: 60px;
     padding: 20px ;
     padding-left: 50px;
     border-radius: 10px;
-    color: white;
+    color: black;
     cursor: pointer;
     position: relative;
     text-align: end;
@@ -1180,7 +1170,8 @@ right:-10px;
     transition: var(--main-transition);
 }
 .jops .button:hover {
-    background-color: black;
+    background-color: var(--main-color);
+    color: white;
 }
 .jops .button:hover i {
     left: 10px;
@@ -1189,7 +1180,9 @@ right:-10px;
 /* STart footer  */
 footer {
     padding: var(--section-padding) 0 ;
-    background-color: black;
+    background-color: var(--main-page);
+    border-top: 1px solid rgba(255, 255, 255, 0.459) ;
+    boe
 }
 footer .col-group {
     display: flex;
